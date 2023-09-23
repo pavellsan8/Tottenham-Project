@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/match_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/matchTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Premier League"
+                    android:fontFamily="@font/essc_bold"
+                    android:textColor="@color/primaryColor"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/homeImg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/th_logo"/>
+
+                        <TextView
+                            android:id="@+id/homeTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOT"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/essc_bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:id="@+id/dateMatch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Friday, 28 Apr 2023"
+                            android:fontFamily="@font/essc_medium"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:id="@+id/timeMatch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="02:15"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/essc_medium"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"/>
+
+                        <TextView
+                            android:id="@+id/stadiumMatch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tottenham Hotspur Stadium"
+                            android:fontFamily="@font/essc_medium"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/awayImg"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/mu_logo"/>
+
+                        <TextView
+                            android:id="@+id/awayTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MUN"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/essc_bold"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="3dp"
+            android:backgroundTint="@color/primaryColor">
+
+            <TextView
+                android:id="@+id/buyTickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Tickets Here"
+                android:layout_gravity="center"
+                android:fontFamily="@font/essc_medium"
+                android:textColor="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
